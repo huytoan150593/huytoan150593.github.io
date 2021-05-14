@@ -173,6 +173,7 @@ h4 {
     display: flex;
     justify-content: space-evenly;
     margin: 100px auto;
+    flex-wrap: wrap;
 }
 #resume {
     text-align: center;
@@ -188,6 +189,7 @@ h4 {
 .projects img {
     width: 400px;
     border-radius: 5%;
+    box-shadow: 10px 10px 10px grey;   
 }
 .projects img:hover {
     opacity: 0.8;
@@ -200,6 +202,9 @@ h4 {
 .jec-text {
     margin: auto;
     font-size: 1.2rem;
+}
+.reverse {
+    flex-direction: row-reverse;
 }
 #certify {
     text-align: center;
@@ -245,5 +250,30 @@ footer h3 {
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+/* -----Mobile------739px 46.1875em */
+@media only screen and (max-width: 46.1875em ){
+    .about-detail-info h4 {
+        text-align: center;
+    }
+    .skill-detail {
+        margin-bottom: 20px;
+        width: 100px;
+    }
+    .contact .icon {
+        display: none;
+    }
+    #resume {
+        margin: 50px 15px;
+    }
+    .projects img {
+        width: 100%;
+    }
+    .jec-text {
+        margin-top: 15px;
+    }
+    #certify img {
+        display: none;
     }
 }
